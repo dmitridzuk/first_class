@@ -5,7 +5,7 @@ private:
     float a;
     float b;
 public:
-    Rectangle(float a, float b) : a(a), b(b)
+    Rectangle(float dlina, float shirina) : a(dlina), b(shirina)
     {
     }
     float S();
