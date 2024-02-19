@@ -44,6 +44,7 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     String s1("Hello");
     String s2 = s1; // используем конструктор копирования
     String s3;
