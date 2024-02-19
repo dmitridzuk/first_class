@@ -8,8 +8,7 @@ int main()
 
     std::string filename = "input.txt";
 
-    la::increaseAndWriteRunNumber(filename);
-    la::writeCurrentTime(filename);
+    gd::appendTimeToFile(filename);
 
     std::cout << "Информация записана в файл " << filename << std::endl;
 

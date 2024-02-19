@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required (VERSION 3.8)
 
-set(PROJECT_NAME sem2-lab1)
+set(PROJECT_NAME laba1)
 project("${PROJECT_NAME}")
 
 set(CMAKE_CXX_STANDART 17)

@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include <string>
-namespace la {
-	void increaseAndWriteRunNumber(const std::string& filename);
+namespace gd {
+	void appendTimeToFile(const std::string& filename);
 
-	void writeCurrentTime(const std::string& filename);
 }
