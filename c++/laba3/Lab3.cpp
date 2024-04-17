@@ -6,23 +6,21 @@ private:
     char* str;
 
 public:
-    String() : str(nullptr) {}
- 
-    String(const char* s) {
+    String(const char* s="") {
         str = new char[strlen(s) + 1];
-        strcpy_s(str, strlen(s) + 1, s);
+        strcpy_s(str, s);
     }
  
     String(const String& other) {
         str = new char[strlen(other.str) + 1];
-        strcpy_s(str, strlen(other.str) + 1, other.str);
+        strcpy_s(str, other.str);
     }
  
     String& operator=(const String& other) {
         if (this != &other) {
             delete[] str;
             str = new char[strlen(other.str) + 1];
-            strcpy_s(str, strlen(other.str) + 1, other.str);
+            strcpy_s(str, other.str);
         }
         return *this;
     }
