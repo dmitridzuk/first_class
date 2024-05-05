@@ -36,11 +36,11 @@ def info(data):
     header = data[0]
     field_stats = {}
     for i in range(num_columns):
-        if i < len(header):  # Check if index is within range
+        if i < len(header):
             field_name = header[i]
-            field_values = [row[i] for row in data[1:] if i < len(row)]  # Check if index is within range
+            field_values = [row[i] for row in data[1:] if i < len(row)]
             non_empty_values = [value for value in field_values if value != '']
-            if non_empty_values:  # Check if list is not empty
+            if non_empty_values:
                 num_non_empty_values = len(non_empty_values)
                 field_type = type(non_empty_values[0]).__name__
                 field_stats[field_name] = {'Qty': num_non_empty_values, 'Type': field_type}
@@ -85,7 +85,7 @@ def make_ds(data, file_name):
         writer.writerows(testing_data)
 
 
-# Пример использования функций
+# запуск номер 1!
 file_name = 'Titanic.csv'
 data = load_csv(file_name)
 
